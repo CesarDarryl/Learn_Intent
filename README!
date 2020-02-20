@@ -1,0 +1,11 @@
+So you need to ADD 
+        <uses-permission android:name="android.permission.INTERNET"/>
+to get permission accesing local browser
+
+then make input for user inputing their browse Address .
+because default, android cant read the Url . so put this code
+  if(!url.startsWith("http://") && !url.startsWith("https://"))
+        {
+            url = "http://" + url;
+        }
+        
